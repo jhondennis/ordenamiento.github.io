@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bubble Sort</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <section class="head">Bubble Sort</section>
+    <section class="data-container"></section>
+    <section id="ele"></section>
+    <div style="margin: auto; width: fit-content;">
+        <div>
+          <table>
+            <tr>
+              <td><Label>Cantidad de bloques</Label></td>
+              <td><input type="text" id="bloque"></td>
+            </tr>
+            <tr>
+              <td><Label>Velocidad</Label></td>
+              <td><input type="text" id="velocidad"></td>
+            </tr>
+          </table>
+        </div>
+        <!-- "Generate New Array" button -->
+        <!-- <button class="btn1" onclick="return generate()" id="Button1" > -->
+        <button class="btn1" onclick="return generateBlocks()" id="Button1" >
+          Generate New Array
+        </button>
+        
+        <!-- "Insertion Sort" button -->
+        <button class="btn2" onclick="bubbleSort(),disable()" id="Button2" >
+          Bubble Sort
+        </button>
+  
+        <button class="btn2" onclick="generate()" id="Button2" >
+          Reiniciar
+        </button>
+      </div>
+
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

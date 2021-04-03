@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>D e n n i s</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+		
+		<link rel="stylesheet" href="ExpoSRC/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+      <div id="wifi">
+        <!-- <table>
+          <tr>
+            <td>wifi:</td>
+            <td>Huawei Mate 10</td>
+          </tr>
+          <tr>
+            <td>pass:</td>
+            <td>delunoalcinco</td>
+          </tr>
+        </table> -->
+        <p>127.0.0.0:8000</p>
+      </div>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<!-- METODOS, TIEMPO Y EJECUCION -->
+				<section>
+					<h2 class="">
+						Metodos de ordenacion<br>y<br>tiempos de ejecucion
+					</h2>
+					<br>
+					<ul>
+						<li>Oscar Baptista</li>
+						<li>Dennis Laurel</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>
+						METODOS DE ORDENAMIENTO
+					</h2>
+					<hr>
+					<p style="font-size: 25px; text-align: justify;">
+						Los algoritmos de ordenamiento nos permiten, como su nombre lo dice, ordenan vectores con valores asignadoss.
+						Existe desde el método más simple, como el Bubblesort (o Método Burbuja), que son simples iteraciones, hasta el Quicksort (Método Rápido), que al estar optimizado usando recursión, su tiempo de ejecución es menor y es más efectivo.
+					</p>
+				</section>
+				
+				<section>
+					<div style="display: flex;">
+					  <div>
+  					  <h2>Metodos Iterativos</h2>
+    					<ol style="font-size: 30px;">
+    						<li>Burbuja <b>(Bubble-sort)</b></li>
+    						<ul>
+    							<li>Burbuja simple</li>
+    							<li>Burbuja mejorada</li>
+    						</ul>
+    						<li>Insercion <b>(Insertsort)</b></li>
+    						<li>Seleccion <b>(Selectionsort)</b></li>
+    					</ol>
+  					</div>
+  					<div>
+  					  <h2>Metodos Recursivos</h2>
+    					<ol style="font-size: 40px;">
+    						<li>Mergesort</li>
+    						<li>Quicksort</li>
+    					</ol>
+  					</div>
+					</div>
+				</section>
+
+        <section data-auto-animate >
+          <h3 data-id="code-title">Comparacion entre algoritmos</h3>
+          <hr>
+          <p data-id="code-animation" data-trim>
+            <img src="./ExpoSRC/img/allAlgorithms.png" alt="">
+          </p>
+        </section>
+
+        <section data-auto-animate >
+          <h3 data-id="code-title">Comparacion entre algoritmos</h3>
+          <hr>
+          <p data-id="code-animation" data-trim>
+            <div style="display: flex; align-items: center;">
+              <div>
+                <ul style="font-size: 20px;">
+                  <ul>Burbuja (Bubble Sort): Complejidad O(n^2)</ul>
+                  <br>
+                  <ul>Conteo (Counting Sort): Complejidad O(n+k)</ul>
+                  <br>
+                  <ul>Montones (Heapsort): Complejidad O(n log n )</ul>
+                  <br>
+                  <ul>Inserción (Insertion Sort): Complejidad O(n^2)</ul>
+                  <br>
+                  <ul>Mezclas (Merge Sort): Complejidad O(n log n).</ul>
+                  <br>
+                  <ul>Rápido (Quicksort): Complejidad O(n log n).</ul>
+                  <br>
+                  <ul>Selección (Selection Sort): Complejidad O(n^2).</ul>
+                </ul>
+              </div>
+              <div>
+                <img src="./ExpoSRC/img/allAlgorithms.png" alt="">
+              </div>
+            </div>
+          </p>
+        </section>
+<!-- METODOS, TIEMPO Y EJECUCION -->
+
+<!-- BUBBLE SORT -->
+				<section>
+					<section data-auto-animate >
+						<h2 data-id="code-title">Bubble sort</h2>
+            <hr>
+						<p data-id="code-animation" data-trim>
+                <p>
+                  Recorrer un conjunto de datos comparando pares de elementos.
+                  Si el primero es mayor al segundo, invertir sus lugares. 
+                  Repetir el procedimiento hasta recorrer todo el conjunto.
+                </p>
+                <img src="./ExpoSRC/bubble/img/BubbleSort_worst_case.gif" alt="" style="width: 70%;">
+						</p>
+					</section>
+
+					<section data-auto-animate >
+						<h2 data-id="code-title">Bubble sort</h2>
+            <hr>
+						<p data-id="code-animation">
+              <ul>
+                <li>¿Qué pasa con los elementos grandes? ¿y con los pequeños?
+                  <ul>
+                    <p>Los grandes van muy rápido a su lugar en el orden (burbujas, conejos)</p>
+                    <p>Los pequeños se hunden lentamente (tortugas)</p>
+                  </ul>
+                </li>
+                <li>¿Cuál es el mejor caso?
+                  <ul>Cuando los elementos están ordenados</ul>
+                </li>
+                <li>¿cuál es su complejidad?
+                  <ul>Cerca de O(n^2)</ul>
+                </li>
+              </ul>
+            </p>
+					</section>
+
+					<section data-auto-animate >
+						<h2 data-id="code-title">Bubble-sort Code</h2>
+            <hr>
+						<pre data-id="code-animation">
+							<code class="hljs" data-trim data-line-numbers>
+              // Java program for implementation of Bubble Sort
+              public static void bubblesort(int array[])
+              {
+                int n = array.length;
+                for(int i = 0; i< n-1; i++){
+                  for(int j = 0; j< n-i-1; j++){
+                    ...
+                  }
+                }
+              }
+							</code>
+						</pre>
+					</section>
+	
+					<section data-auto-animate >
+						<h2 data-id="code-title">Bubble-sort Code</h2>
+            <hr>
+						<pre data-id="code-animation">
+							<code class="hljs" data-trim data-line-numbers>
+              // Java program for implementation of Bubble Sort
+              public static void bubblesort(int array[])
+              {
+                int n = array.length;
+                for(int i = 0; i< n-1; i++){
+                  for(int j = 0; j< n-i-1; j++){
+                    if(array[j] > array[j+1]) {
+                      int temp = array[j];
+                      array[j] = array[j+1];
+                      array[j+1] = temp;
+                    }
+                  }
+                }
+              }
+							</code>
+						</pre>
+					</section>
+					
+					<section data-auto-animate >
+						<h3 data-id="code-title">Bubble-sort Optimized Code</h3>
+            <hr>
+						<pre data-id="code-animation">
+							<code class="hljs" data-trim data-line-numbers="17-20|1-20">
+              <script type="text/template">
+                // An optimized version of Bubble Sort
+                static void bubbleSort(int arr[], int n)
+                {
+                  int i, j, temp;
+                  boolean swapped;
+                  for (i = 0; i < n - 1; i++) {
+                    swapped = false;
+                    for (j = 0; j < n - i - 1; j++) {
+                      if (arr[j] > arr[j + 1]) {
+                        // swap arr[j] and arr[j+1]
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                        swapped = true;
+                      }
+                    }
+                    if (swapped == false)
+                      break;
+                  }
+                }
+              </script>
+							</code>
+						</pre>
+					</section>
+					
+					<section data-background-iframe="./ExpoSRC/bubble/buble-sort.html" data-background-interactive>
+					</section>
+				</section>	
+<!-- BUBBLE SORT END-->
+
+<!-- INSERT SORT -->
+				<section>
+
+          <section data-auto-animate >
+						<h2 data-id="code-title">Insert sort</h2>
+            <hr>
+						<p data-id="code-animation" data-trim>
+                Toma los elementos de la lista uno a uno y los inserta en el orden correspondiente.
+              <img src="./ExpoSRC//insertion/img/Insertion.gif" alt="" style="width: 80%;">
+						</p>
+					</section>
+         
+          <section data-auto-animate >
+						<h2 data-id="code-title">Insert sort</h2>
+            <hr>
+						<p data-id="code-animation" data-trim>
+              <ul>
+                <li>¿Cuál es el mejor caso?
+                  <ul>Una lista ordenada: O(n) por iteración</ul>
+                </li>
+                <li>¿Cuál es el peor caso?
+                  <ul>Una lista ordenada inversamente: O(n^2)</ul>
+                </li>
+              </ul>
+						</p>
+					</section>
+          
+          <section data-auto-animate >
+						<h2 data-id="code-title">Insert sort</h2>
+            <hr>
+						<p data-id="code-animation" data-trim>
+              <ul style="font-size: 35px;">
+                <li>Ventajas:
+                  <ul>Es muy simple y fácil de implementar.</ul>
+                  <ul>Eficiente en conjuntos de datos pequeños</ul>
+                  <ul>Eficiente en conjuntos de datos casi ordenados u ordenados.</ul>
+                  <ul>Estable</ul>
+                  <ul>
+                    El tiempo de ejecución depende de la entrada: una secuencia que ya está altamente ordenada tomará menos tiempo.
+                  </ul>
+                </li>
+                <li>Desventajas:
+                  <ul>Es ineficiente para conjuntos grandes de elementos.</ul>
+                </li>
+              </ul>
+						</p>
+					</section>
+
+					<section data-auto-animate >
+						<h2 data-id="code-title">Insert-sort Code</h2>
+            <hr>
+						<pre data-id="code-animation">
+							<code class="hljs" data-trim data-line-numbers>
+								<script type="text/template">
+                /* Function to sort an array using insertion sort*/
+                public static void insertionSort(int array[]) 
+                {  
+                  int n = array.length;  
+                  for (int j = 1; j < n; j++) {  
+                    int key = array[j];  
+                    int i = j-1;  
+                    while ( (i > -1) && ( array [i] > key ) ) {  
+                      array [i+1] = array [i];  
+                      i--;  
+                    }  
+                    array[i+1] = key;  
+                  }
+                }
+								</script>
+							</code>
+						</pre>
+					</section>
+	
+					<section data-background-iframe="./ExpoSRC/insertion/insertion.html" data-background-interactive>
+					</section>
+				</section>
+<!-- INSERT SORT -->
+
+				<section style="text-align: center;" data-background-iframe="./ExpoSRC/end-page/end.html" data-background-interactive>
+					<h4 style="margin-top: 200px;">Gracias por su atencion</h4>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+
+		<script type="module">
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+        backgroundTransition: 'zoom',
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: { Macros: { RR: "{\\bf R}" } }
+        },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath ]
+			});
+
+		</script>
+
+	</body>
+</html>
